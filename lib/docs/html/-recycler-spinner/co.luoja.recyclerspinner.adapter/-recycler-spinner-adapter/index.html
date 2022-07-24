@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>RecyclerSpinnerAdapter</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+const savedDarkMode = storage ? JSON.parse(storage) : false
+if(savedDarkMode === true){
+    document.getElementsByTagName("html")[0].classList.add("theme-dark")
+}</script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>RecyclerSpinner</span>
+            </a>
+    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="RecyclerSpinner::co.luoja.recyclerspinner.adapter/RecyclerSpinnerAdapter///PointingToDeclaration//1946847589">
+  <div class="breadcrumbs"><a href="../../../index.html">RecyclerSpinner</a><span class="delimiter">/</span><a href="../index.html">co.luoja.recyclerspinner.adapter</a><span class="delimiter">/</span><a href="index.html">RecyclerSpinnerAdapter</a></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Recycler</span><wbr></wbr><span>Spinner</span><wbr></wbr><span><span>Adapter</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lib:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="index.html">RecyclerSpinnerAdapter</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">I</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="index.html">E</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="index.html">DVH</a><span class="token operator"> : </span><a href="https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView.ViewHolder.html">RecyclerView.ViewHolder</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="index.html">SVH</a><span class="token operator"> : </span><a href="https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView.ViewHolder.html">RecyclerView.ViewHolder</a><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">initiallySelected<span class="token operator">: </span><a href="index.html">I</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">differ<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/DiffUtil.ItemCallback.html">DiffUtil.ItemCallback</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">E</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span> : <a href="https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/ListAdapter.html">ListAdapter</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">E</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="index.html">DVH</a><span class="token operator">&gt; </span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">A Base class for classes that provides items to be displayed in <a href="../../co.luoja.recyclerspinner/-recycler-spinner/index.html">co.luoja.recyclerspinner.RecyclerSpinner</a>s. For most use cases, it is not necessary to inherit from this class, as <a href="../-flat-spinner-adapter/index.html">FlatSpinnerAdapter</a> or <a href="../-nested-spinner-adapter/index.html">NestedSpinnerAdapter</a> are usually sufficient.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Types">Types</button><button class="section-tab" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button><button class="section-tab" data-togglable="Parameters">Parameters</button><button class="section-tab" data-togglable="See also">See also</button><button class="section-tab" data-togglable="Inheritors">Inheritors</button></div>
+    <div class="tabs-section-body">
+      <h2 class="">See also</h2>
+      <div data-togglable="See also">
+        <div class="platform-hinted WithExtraAttributes" data-platform-hinted="data-platform-hinted" data-togglable="See also"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lib:dokkaHtml/release"><div data-togglable="See also"><div class="table" data-togglable="See also"><div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><a href="https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/ListAdapter.html"><span>androidx.</span><wbr></wbr><span>recyclerview.</span><wbr></wbr><span>widget.</span><wbr></wbr><span>List</span><wbr></wbr><span><span>Adapter</span></span></a></div></span></div><div><div class="title"><div data-togglable="See also"></div></div></div></div></div></div></div></div></div>
+      </div>
+      <h2 class="">Parameters</h2>
+      <div data-togglable="Parameters">
+        <div class="platform-hinted WithExtraAttributes" data-platform-hinted="data-platform-hinted" data-togglable="Parameters"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lib:dokkaHtml/release"><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span><span>I</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">: The Type of the items that this <a href="index.html">RecyclerSpinnerAdapter</a> is used to select.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span><span>E</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">: The Type of the items that are used to define the elements displayed in the spinner dropdown's <a href="https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView.html">RecyclerView</a>.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span><span>DVH</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">: The Type of <a href="https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView.ViewHolder.html">ViewHolder</a> used to manage the views used to display the items in the dropdown.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span><span>SVH</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">: The Type of <a href="https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView.ViewHolder.html">ViewHolder</a> used to display the selected item in the spinner itself.</p></div></div></div></div></div></div></div></div></div>
+      </div>
+      <h2 class="tabbedcontent">Constructors</h2>
+      <div class="table" data-togglable="Constructors"><a data-name="1755760979%2FConstructors%2F1946847589" anchor-label="RecyclerSpinnerAdapter" id="1755760979%2FConstructors%2F1946847589" data-filterable-set=":lib:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-recycler-spinner-adapter.html"><span>Recycler</span><wbr></wbr><span>Spinner</span><wbr></wbr><span><span>Adapter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1755760979%2FConstructors%2F1946847589"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lib:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">E</a><span class="token operator">&gt; </span><a href="-recycler-spinner-adapter.html"><span class="token function">RecyclerSpinnerAdapter</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">differ<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/DiffUtil.ItemCallback.html">DiffUtil.ItemCallback</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">E</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Creates a new <a href="index.html">RecyclerSpinnerAdapter</a> which initially has no item selected.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1475878922%2FConstructors%2F1946847589" anchor-label="RecyclerSpinnerAdapter" id="1475878922%2FConstructors%2F1946847589" data-filterable-set=":lib:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-recycler-spinner-adapter.html"><span>Recycler</span><wbr></wbr><span>Spinner</span><wbr></wbr><span><span>Adapter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1475878922%2FConstructors%2F1946847589"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lib:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">I</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="index.html">E</a><span class="token operator">&gt; </span><a href="-recycler-spinner-adapter.html"><span class="token function">RecyclerSpinnerAdapter</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">initiallySelected<span class="token operator">: </span><a href="index.html">I</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">differ<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/DiffUtil.ItemCallback.html">DiffUtil.ItemCallback</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">E</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Create a new <a href="index.html">RecyclerSpinnerAdapter</a> which starts with the given <a href="index.html">Item</a> selected and uses the given <a href="https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/DiffUtil.ItemCallback.html">DiffUtil.ItemCallback</a> to calculate differences when its contents change.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Types</h2>
+      <div class="table" data-togglable="Types"><a data-name="-840324096%2FClasslikes%2F1946847589" anchor-label="ViewType" id="-840324096%2FClasslikes%2F1946847589" data-filterable-set=":lib:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-view-type/index.html"><span>View</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-840324096%2FClasslikes%2F1946847589"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lib:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-view-type/index.html">ViewType</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">An interface for objects representing types of views to be displayed in the selection dropdown.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="-1344035188%2FFunctions%2F1946847589" anchor-label="clearOnDisplayedItemsCountChangedListener" id="-1344035188%2FFunctions%2F1946847589" data-filterable-set=":lib:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="clear-on-displayed-items-count-changed-listener.html"><span>clear</span><wbr></wbr><span>On</span><wbr></wbr><span>Displayed</span><wbr></wbr><span>Items</span><wbr></wbr><span>Count</span><wbr></wbr><span>Changed</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1344035188%2FFunctions%2F1946847589"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lib:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="clear-on-displayed-items-count-changed-listener.html"><span class="token function">clearOnDisplayedItemsCountChangedListener</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Removes the callback that added via <a href="set-on-displayed-items-count-changed-listener.html">setOnDisplayedItemsCountChangedListener</a></p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1085859042%2FFunctions%2F1946847589" anchor-label="clearOnItemSelectedListener" id="1085859042%2FFunctions%2F1946847589" data-filterable-set=":lib:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="clear-on-item-selected-listener.html"><span>clear</span><wbr></wbr><span>On</span><wbr></wbr><span>Item</span><wbr></wbr><span>Selected</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1085859042%2FFunctions%2F1946847589"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lib:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="clear-on-item-selected-listener.html"><span class="token function">clearOnItemSelectedListener</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Removes the callback that was added via <a href="set-on-item-selected-listener.html">setOnItemSelectedListener</a>.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="594822017%2FFunctions%2F1946847589" anchor-label="clearOnSelectedItemViewChangedListener" id="594822017%2FFunctions%2F1946847589" data-filterable-set=":lib:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="clear-on-selected-item-view-changed-listener.html"><span>clear</span><wbr></wbr><span>On</span><wbr></wbr><span>Selected</span><wbr></wbr><span>Item</span><wbr></wbr><span>View</span><wbr></wbr><span>Changed</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="594822017%2FFunctions%2F1946847589"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lib:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="clear-on-selected-item-view-changed-listener.html"><span class="token function">clearOnSelectedItemViewChangedListener</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Removes the callback that was added via <a href="set-on-selected-item-view-changed-listener.html">setOnSelectedItemViewChangedListener</a></p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-276941898%2FFunctions%2F1946847589" anchor-label="getItemViewType" id="-276941898%2FFunctions%2F1946847589" data-filterable-set=":lib:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-item-view-type.html"><span>get</span><wbr></wbr><span>Item</span><wbr></wbr><span>View</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-276941898%2FFunctions%2F1946847589"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lib:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-item-view-type.html"><span class="token function">getItemViewType</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">element<span class="token operator">: </span><a href="index.html">E</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-view-type/index.html">RecyclerSpinnerAdapter.ViewType</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Return the view type of the view used to display the item in the dropdown, for the purposes of view recycling.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1626327689%2FFunctions%2F1946847589" anchor-label="getSelectedItemViewType" id="1626327689%2FFunctions%2F1946847589" data-filterable-set=":lib:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-selected-item-view-type.html"><span>get</span><wbr></wbr><span>Selected</span><wbr></wbr><span>Item</span><wbr></wbr><span>View</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1626327689%2FFunctions%2F1946847589"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lib:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-selected-item-view-type.html"><span class="token function">getSelectedItemViewType</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">element<span class="token operator">: </span><a href="index.html">I</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-view-type/index.html">RecyclerSpinnerAdapter.ViewType</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Return the view type of the view used to display the selected item, for the purposes of view recycling.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1507620333%2FFunctions%2F1946847589" anchor-label="onBindSelectedItem" id="1507620333%2FFunctions%2F1946847589" data-filterable-set=":lib:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="on-bind-selected-item.html"><span>on</span><wbr></wbr><span>Bind</span><wbr></wbr><span>Selected</span><wbr></wbr><span><span>Item</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1507620333%2FFunctions%2F1946847589"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lib:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-bind-selected-item.html"><span class="token function">onBindSelectedItem</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">viewHolder<span class="token operator">: </span><a href="index.html">SVH</a><span class="token punctuation">, </span></span><span class="parameter ">selectedItem<span class="token operator">: </span><a href="index.html">I</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Called by the RecyclerSpinner to display the newly selected item. This method should update the <a href="on-bind-selected-item.html">viewHolder</a>'s contents to reflect the <a href="on-bind-selected-item.html">selectedItem</a>.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1656062317%2FFunctions%2F1946847589" anchor-label="onCreateSelectedItemViewHolder" id="1656062317%2FFunctions%2F1946847589" data-filterable-set=":lib:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="on-create-selected-item-view-holder.html"><span>on</span><wbr></wbr><span>Create</span><wbr></wbr><span>Selected</span><wbr></wbr><span>Item</span><wbr></wbr><span>View</span><wbr></wbr><span><span>Holder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1656062317%2FFunctions%2F1946847589"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lib:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-create-selected-item-view-holder.html"><span class="token function">onCreateSelectedItemViewHolder</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">parent<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/ViewGroup.html">ViewGroup</a><span class="token punctuation">, </span></span><span class="parameter ">viewType<span class="token operator">: </span><a href="-view-type/index.html">RecyclerSpinnerAdapter.ViewType</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">SVH</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Generates the <a href="https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView.ViewHolder.html">ViewHolder</a> that manages the view displaying the currently selected item in the spinner itself.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1953596545%2FFunctions%2F1946847589" anchor-label="onCreateViewHolder" id="-1953596545%2FFunctions%2F1946847589" data-filterable-set=":lib:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="on-create-view-holder.html"><span>on</span><wbr></wbr><span>Create</span><wbr></wbr><span>View</span><wbr></wbr><span><span>Holder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1953596545%2FFunctions%2F1946847589"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lib:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-create-view-holder.html"><span class="token function">onCreateViewHolder</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">parent<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/ViewGroup.html">ViewGroup</a><span class="token punctuation">, </span></span><span class="parameter ">viewType<span class="token operator">: </span><a href="-view-type/index.html">RecyclerSpinnerAdapter.ViewType</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">DVH</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-158399025%2FFunctions%2F1946847589" anchor-label="setOnDisplayedItemsCountChangedListener" id="-158399025%2FFunctions%2F1946847589" data-filterable-set=":lib:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-on-displayed-items-count-changed-listener.html"><span>set</span><wbr></wbr><span>On</span><wbr></wbr><span>Displayed</span><wbr></wbr><span>Items</span><wbr></wbr><span>Count</span><wbr></wbr><span>Changed</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-158399025%2FFunctions%2F1946847589"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lib:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-on-displayed-items-count-changed-listener.html"><span class="token function">setOnDisplayedItemsCountChangedListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">handler<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Adds a callback to be called when the number of displayed elements is changed. This can be used to prevent the dropdown's size from being animated unnecessarily.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1806511110%2FFunctions%2F1946847589" anchor-label="setOnItemSelectedListener" id="-1806511110%2FFunctions%2F1946847589" data-filterable-set=":lib:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-on-item-selected-listener.html"><span>set</span><wbr></wbr><span>On</span><wbr></wbr><span>Item</span><wbr></wbr><span>Selected</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1806511110%2FFunctions%2F1946847589"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lib:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-on-item-selected-listener.html"><span class="token function">setOnItemSelectedListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">handler<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="index.html">I</a><span class="token operator">?</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Adds a callback to be called when an <a href="index.html">Item</a> is selected.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-857497872%2FFunctions%2F1946847589" anchor-label="setOnSelectedItemViewChangedListener" id="-857497872%2FFunctions%2F1946847589" data-filterable-set=":lib:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-on-selected-item-view-changed-listener.html"><span>set</span><wbr></wbr><span>On</span><wbr></wbr><span>Selected</span><wbr></wbr><span>Item</span><wbr></wbr><span>View</span><wbr></wbr><span>Changed</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-857497872%2FFunctions%2F1946847589"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lib:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-on-selected-item-view-changed-listener.html"><span class="token function">setOnSelectedItemViewChangedListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">handler<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Adds a callback to be called when the view that should be used to display the currently selected item has changed. This can be used to install the new view into the spinner.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="178036060%2FProperties%2F1946847589" anchor-label="selectedItem" id="178036060%2FProperties%2F1946847589" data-filterable-set=":lib:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="selected-item.html"><span>selected</span><wbr></wbr><span><span>Item</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="178036060%2FProperties%2F1946847589"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lib:dokkaHtml/release"><a data-name="178036060%2FProperties%2F1946847589" anchor-label="selectedItem" id="178036060%2FProperties%2F1946847589" data-filterable-set=":lib:dokkaHtml/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="selected-item.html">selectedItem</a><span class="token operator">: </span><a href="index.html">I</a><span class="token operator">?</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="178036060%2FProperties%2F1946847589" anchor-label="selectedItem" id="178036060%2FProperties%2F1946847589" data-filterable-set=":lib:dokkaHtml/release"></a><p class="paragraph">The currently selected item, or none if no item is selected.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Inheritors</h2>
+      <div class="table" data-togglable="Inheritors"><a data-name="1259660219%2FInheritors%2F1946847589" anchor-label="FlatSpinnerAdapter" id="1259660219%2FInheritors%2F1946847589" data-filterable-set=":lib:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-flat-spinner-adapter/index.html">FlatSpinnerAdapter</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1259660219%2FInheritors%2F1946847589"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div></div>
+          </div>
+        </div>
+<a data-name="824211005%2FInheritors%2F1946847589" anchor-label="NestedSpinnerAdapter" id="824211005%2FInheritors%2F1946847589" data-filterable-set=":lib:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-nested-spinner-adapter/index.html">NestedSpinnerAdapter</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="824211005%2FInheritors%2F1946847589"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
