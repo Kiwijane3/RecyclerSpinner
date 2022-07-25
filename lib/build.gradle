@@ -2,7 +2,6 @@ apply plugin: 'com.android.library'
 apply plugin: 'org.jetbrains.kotlin.android'
 apply plugin: 'org.jetbrains.dokka'
 apply plugin: 'maven-publish'
-apply plugin: 'com.vanniktech.maven.publish'
 
 android {
 
@@ -48,14 +47,55 @@ android {
 publishing {
     publications {
         release(MavenPublication) {
-            groupId = 'co.luoja'
+            groupId = "co.luoja"
             artifactId = 'recycler-spinner'
-            version = '1.0'
+            version = '1.0.0'
+
+            pom {
+                name = POM_NAME
+                description = POM_DESCRIPTION
+                url = POM_URL
+
+                licenses {
+                    license {
+                        name = POM_LICENSE_NAME
+                        url = POM_LICENSE_URL
+                    }
+                }
+
+                developers {
+                    developer {
+                        id = POM_DEVELOPER_ID
+                        name = POM_DEVELOPER_NAME
+                        url = POM_DEVELOPER_URL
+                    }
+                }
+                scm {
+                    connection = POM_SCM_CONNECTION
+                    developerConnection = POM_SCM_DEV_CONNECTION
+                    url = POM_SCM_URL
+                }
+            }
+
             afterEvaluate {
                 from components.release
             }
         }
     }
+
+    repositories {
+        maven {
+            url = 'https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/'
+            credentials {
+                username mavenCentralUsername
+                password mavenCentralPassword
+            }
+        }
+    }
+}
+
+signing {
+    sign publishing.publications.release
 }
 
 dokkaHtml {
@@ -68,7 +108,7 @@ dokkaHtml {
 
     dokkaSourceSets {
         all {
-            includeNonPublic.set(false)
+          includeNonPublic.set(false)
 
             includes.from("../readme.md")
         }

@@ -7,7 +7,7 @@ RecyclerSpinner is a flexible and unopinionated spinner implementation that uses
 To get started, add this library as a dependency <More in depth explanation>. Then, add the `RecyclerSpinner` to your layout and define a custom `RecyclerSpinnerAdapter` with the type of data you want to display. For a simple spinner without expandable sections, then you can inherit from `FlatSpinnerAdapter`. Here is an example.
 ```kotlin
 
-class MySpinnerAdapter: FlatSpinnerAdapter<MyType, RecyclerView.ViewHolder, RecyclerViewHolder>(MyDiffer())
+class MySpinnerAdapter: FlatSpinnerAdapter<MyType, ..>(MyDiffer())
 
     class MyDiffer: DiffUtil.ItemCallback<MyType>() {
     
@@ -20,9 +20,7 @@ class MySpinnerAdapter: FlatSpinnerAdapter<MyType, RecyclerView.ViewHolder, Recy
         }
         
     }
-    
-    //...
-    
+    ..
 }
 
 ```
@@ -30,21 +28,14 @@ class MySpinnerAdapter: FlatSpinnerAdapter<MyType, RecyclerView.ViewHolder, Recy
 You can also provide an initially selected value in the constructor, like so:
 
 ```kotlin
-
-class MySpinnerAdapter(initiallySelected: MyType?): FlatSpinner<...>(initiallySelected, MyDiffer()) {
-    
-    //...
-    
-}
+class MySpinnerAdapter(initiallySelected: MyType?): FlatSpinner<..>(initiallySelected, MyDiffer()) {...}
 
 ```
 
 Then, to display items, override the functions to generate and populate view holders for items in the dropdown and the spinner itself, as you would when creating an adapter for a plain recycler view.
 
 ```kotlin
-
-    //...
-
+    ..
     override fun onCreateSelectedItemViewHolder(parent: ViewGroup, viewType: ViewType): SVH {
         // Create the view holder to be display the current selection.
     }
@@ -60,9 +51,7 @@ Then, to display items, override the functions to generate and populate view hol
     override fun onBindViewHolder(holder: DVH, item: MyType) {
         // Display the item in the dropdown using the view holder's itemView.
     }
-    
-    //...
-    
+    ..
 ```
 
 Then, populate the spinner by setting its adapter to an instance of your adpater, calling `submitList` on the adapter. You can then observe  changes in selection by registering a callback `setOnItemSelectedListener`. Here is an example:
@@ -70,31 +59,21 @@ Then, populate the spinner by setting its adapter to an instance of your adpater
 ```kotlin
 
 class MyFragment: Fragment() {
-
-    lateinit var adapter: MySpinnerAdapter
-
-    //...
-    
+    ...
     override fun onViewCreated(view: View, bundle: Bundle?) {
-        //...
-        
+        ...
         adapter = MySpinnerAdapter()
         
-        spinner.adpater = adapter
+        spinner.adapter = adapter
         
         adapter.submitList(options)
         adapter.setOnItemSelectedListener() { selected ->
             // Respond to the new selection.
         }
-        
-        //...
+        ..
     }
-    
-    
-    //...
-
+    ..
 }
-
 ```
 
 ## Using Multiple Kinds of View
@@ -102,13 +81,9 @@ class MyFragment: Fragment() {
 As with any other `RecyclerViewAdapter`, `RecyclerSpinnerAdapter` can be configured to use multiple kinds of views depending on the item being displayed. This is done separately for the views in the dropdown and the spinner itself. `RecyclerSpinnerAdapter` uses an interface to define viewtypes, rather than a raw integer. Here is an example:
 
 ```kotlin
-
-class MySpinnerAdapter: FlatSpinnerAdapter<MySuperType, ViewHolder, ViewHolder> {
-
-    //...
-    
+class MySpinnerAdapter: FlatSpinnerAdapter<MySuperType, ...> {
+    ..
     object MyFirstViewType: ViewType
-    
     object MySecondViewType: ViewType
     
     override fun getItemViewType(element: MySuperType): ViewType {
@@ -117,20 +92,16 @@ class MySpinnerAdapter: FlatSpinnerAdapter<MySuperType, ViewHolder, ViewHolder> 
             is MySecondViewType -> MySecondViewType
         }
     }
-
-} 
-
+    ..
+}
 ```
 
 Then, adjust the logic of the view creating and binding to reflect the different view types, like so:
 
 ```kotlin
-
-    //...
-
-    class MyFirstViewHolder...
-    
-    class MySecondViewHolder...
+    ..
+    class MyFirstViewHolder..
+    class MySecondViewHolder..
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: ViewType): DVH {
         return when (viewType) {
@@ -146,9 +117,7 @@ Then, adjust the logic of the view creating and binding to reflect the different
             // Binding logic for the second type
         }
     }
-    
-    //...
-
+    ..
 ```
 
 ## Nested Dropdowns
@@ -157,15 +126,13 @@ RecyclerSpinner has built-in support for nested spinners using `NestedSpinnerAda
 
 ```kotlin
 
-class MyItem...
+class MyItem..
+class MySectionIdentifier..
 
-class MySectionIdentifier...
-
-class MyNestedSpinnerAdapter: NestedSpinnerAdapter<MyItem, MySectionIdentifier, ViewHolder, ViewHolder, ViewHolder>(MyDiffer()) {
+class MyNestedSpinnerAdapter: NestedSpinnerAdapter<MyItem, MySectionIdentifier, ..>(MyDiffer()) {
 
     class MyDiffer: NestedSpinnerAdapter<MyItem, MySectionIdentifier>() {
     
-        
         override fun doSectionIdsShareIdentity(a: MySectionIdentifier, b: MySectionIdentifier): Boolean {
             // Return whether the identifiers represent the same section.
         }
@@ -183,17 +150,14 @@ class MyNestedSpinnerAdapter: NestedSpinnerAdapter<MyItem, MySectionIdentifier, 
         }
     
     }
-    
+    ..
 }
-
 ```
 
 Then, define methods to create view holders for both sections and items, and to update these view holders based on the section identifiers and items, respectively. Here is an example:
 
 ```kotlin
-
-    //...
-    
+    ..
     override fun onCreateSectionHeaderViewHolder(
         parent: ViewGroup,
         viewType: SectionViewType
@@ -223,9 +187,7 @@ Then, define methods to create view holders for both sections and items, and to 
     ) {
         // Update the view to reflect the new item.
     }
-    
-    //...
-
+    ..
 ```
 
 Data should be provided to the adapter via the method `NestedSpinnerAdapter.submitNestedList` as a `NestedList`, which can be constructed using `nestedListOf()`, with the items defined via `item`
@@ -234,19 +196,9 @@ and `section`. For example:
 ```kotlin
 
 class MyFragment: Fragment() {
-
-    //...
-
-    val spinner: RecyclerSpinner
-    
-    lateinit var adapter: MyNestedSpinnerAdapter
-    
-    //...
-    
+    ..
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-    
-        //...
-        
+        ..
         adapter = MyNestedSpinner()
         spinner.adapter = adapter
         
@@ -256,11 +208,10 @@ class MyFragment: Fragment() {
             section(myFirstSectionIdentifier, myThirdItem, myFourthItem, myFifthItem),
             section(mySecondSectionIdentifier, mySecondSectionItems)
         )
-    
+        ..
     }
-
+    ..
 }
-
 ```
 
 The adapter can be configured to use multiple view types in a similar way as described in the section Using Multiple Kinds of Views.

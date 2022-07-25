@@ -12,7 +12,7 @@ import android.widget.*
 import androidx.core.animation.doOnEnd
 import androidx.recyclerview.widget.*
 import co.luoja.recyclerspinner.adapter.*
-import com.luoja.recyclerspinner.R
+import co.luoja.recyclerspinner.R
 import kotlin.properties.Delegates.observable
 
 /**
