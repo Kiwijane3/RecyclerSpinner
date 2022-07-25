@@ -29,7 +29,7 @@ class MySpinnerAdapter: FlatSpinnerAdapter<MyType, RecyclerView.ViewHolder, Recy
 
 You can also provide an initially selected value in the constructor, like so:
 
-```
+```kotlin
 
 class MySpinnerAdapter(initiallySelected: MyType?): FlatSpinner<...>(initiallySelected, MyDiffer()) {
     
@@ -67,7 +67,7 @@ Then, to display items, override the functions to generate and populate view hol
 
 Then, populate the spinner by setting its adapter to an instance of your adpater, calling `submitList` on the adapter. You can then observe  changes in selection by registering a callback `setOnItemSelectedListener`. Here is an example:
 
-```
+```kotlin
 
 class MyFragment: Fragment() {
 
