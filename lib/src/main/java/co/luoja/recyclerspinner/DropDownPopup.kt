@@ -18,7 +18,7 @@ import kotlin.properties.Delegates.observable
 /**
  * The [PopupWindow] used to display a [RecyclerSpinner]'s dropdown selection window.
  */
-internal class DropDownPopup(context: Context, background: Drawable?, adapter: RecyclerSpinnerAdapter<*, *, *, *>?) : PopupWindow(context) {
+internal class DropDownPopup(context: Context, background: Drawable?, initialPadding: PaddingSpec?, initialSpacing: Int?, adapter: RecyclerSpinnerAdapter<*, *, *, *>?) : PopupWindow(context) {
 
     /**
      * The recycler view used to display the contents of the dropdown.
@@ -40,6 +40,21 @@ internal class DropDownPopup(context: Context, background: Drawable?, adapter: R
     }
 
     /**
+     * The padding around the popup's contents. Should be applied to the recyclerview so that the background does not shrink.
+     */
+    var padding: PaddingSpec? by observable(initialPadding) { _, _, value ->
+        recyclerView.setPaddingRelative(value)
+    }
+
+    /**
+     * The spacing between each element in the popup's content recyclerview.
+     */
+    var spacing: Int? by observable(initialSpacing) { _, oldValue, newValue ->
+        if (oldValue != null) recyclerView.removeItemDecorationAt(0)
+        if (newValue != null) recyclerView.addItemDecoration(VerticalInterItemMarginDecorator(newValue), 0)
+    }
+
+    /**
      * Indicates whether an animation should be performed when the recycler view changes height.
      *
      * To avoid stutter and graphical glitches, changes in the height of the content should only occur if the number of displayed elements has changed.
@@ -56,6 +71,11 @@ internal class DropDownPopup(context: Context, background: Drawable?, adapter: R
         contentView = view
 
         recyclerView = view.findViewById(R.id.content)
+
+        recyclerView.setPaddingRelative(initialPadding)
+        initialSpacing?.let {
+            recyclerView.addItemDecoration(VerticalInterItemMarginDecorator(initialSpacing), 0)
+        }
 
         recyclerView.adapter = adapter
         recyclerView.layoutManager = LinearLayoutManager(context)

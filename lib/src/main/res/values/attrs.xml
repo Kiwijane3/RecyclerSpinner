@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RecyclerSpinner">
+        <attr name="popup_padding" format="dimension"/>
+        <attr name="popup_padding_start" format="dimension"/>
+        <attr name="popup_padding_top" format="dimension"/>
+        <attr name="popup_padding_end" format="dimension"/>
+        <attr name="popup_padding_bottom" format="dimension"/>
+        <attr name="popup_spacing" format="dimension"/>
+    </declare-styleable>
+</resources>

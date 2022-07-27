@@ -4,7 +4,19 @@ RecyclerSpinner is a flexible and unopinionated spinner implementation that uses
 
 ## Getting Started
 
-To get started, add this library as a dependency <More in depth explanation>. Then, add the `RecyclerSpinner` to your layout and define a custom `RecyclerSpinnerAdapter` with the type of data you want to display. For a simple spinner without expandable sections, then you can inherit from `FlatSpinnerAdapter`. Here is an example.
+To get started, make sure you have included the Maven Central repository, and then add it as a dependency to the target you intend to use it from, like so:
+
+```groovy
+
+dependencies {
+    ..
+    implementation 'co.luoja:recycler-spinner:1.2.0'
+    ..
+}
+
+```
+
+Once you have added the depencency, add the `RecyclerSpinner` to your layout and define a custom `RecyclerSpinnerAdapter` with the type of data you want to display. For a simple spinner without expandable sections, then you can inherit from `FlatSpinnerAdapter`. Here is an example.
 ```kotlin
 
 class MySpinnerAdapter: FlatSpinnerAdapter<MyType, ..>(MyDiffer())
@@ -76,12 +88,28 @@ class MyFragment: Fragment() {
 }
 ```
 
+## Setting Padding and Spacing in the Dropdown
+
+The padding around the dropdown's content and the spacing between dropdown elements can be set using xml attributes. To set the padding, use the attribute `app:popup_padding` to padding on all sides, or set padding on each side using attributes `app:popup_padding_start`, `app:popup_padding_top`, `app:popup_padding_end`, `app:popup_padding_bottom`. To set spacing, use the attribute `app:popup_spacing`. These are all dimension values, so you can use values like `6dp`.
+
+Here is an example that will set the padding on all sides and the spacing between the elements to 8dp:
+
+```xml
+..
+    <co.luoja.recyclerspinner.RecyclerSpinner
+        ..
+        app:popup_padding="8dp"
+        app:popup_spacing="8dp"
+        ../>
+..
+```
+
 ## Using Multiple Kinds of View
 
 As with any other `RecyclerViewAdapter`, `RecyclerSpinnerAdapter` can be configured to use multiple kinds of views depending on the item being displayed. This is done separately for the views in the dropdown and the spinner itself. `RecyclerSpinnerAdapter` uses an interface to define viewtypes, rather than a raw integer. Here is an example:
 
 ```kotlin
-class MySpinnerAdapter: FlatSpinnerAdapter<MySuperType, ...> {
+class MySpinnerAdapter: FlatSpinnerAdapter<MySuperType, ..> {
     ..
     object MyFirstViewType: ViewType
     object MySecondViewType: ViewType

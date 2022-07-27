@@ -50,10 +50,38 @@ fun <SI, I> nestedListOf(vararg entries: Entry<SI, I>): NestedList<SI, I> {
 }
 
 /**
+ * Create a new [NestedList] containing the provided [entries]. The best way to generate entries is with the functions [item] and [section].
+ */
+fun <SI, I> nestedListOf(entries: List<Entry<SI, I>>): NestedList<SI, I> {
+    return ConcreteNestedList(entries)
+}
+
+/**
+ * Generates a new [NestedList] by applying the given [generator] to each element to create each [Entry].
+ */
+fun <T, SI, I> List<T>.toNestedListBy(generator: (T) -> Entry<SI, I>): NestedList<SI, I> {
+    return nestedListOf(this.map(generator))
+}
+
+/**
  * Create a new [MutableNestedList] containing the provided [entries]. The best way to generate entries is with the functions [item] and [section].
  */
 fun <SI, I> mutableNestedListOf(vararg entries: Entry<SI, I>): MutableNestedList<SI, I> {
     return ConcreteMutableNestedList(entries.toMutableList())
+}
+
+/**
+ * Create a new [MutableNestedList] containing the provided [entries]. The best way to generate entries is with the functions [item] and [section].
+ */
+fun <SI, I> mutableNestedListOf(entries: List<Entry<SI, I>>): MutableNestedList<SI, I> {
+    return ConcreteMutableNestedList(entries.toMutableList())
+}
+
+/**
+ * Generates a new [MutableNestedList] by applying the given [generator] to each element to create each [Entry].
+ */
+fun <T, SI, I> List<T>.toMutableNestedListBy(generator: (T) -> Entry<SI, I>): MutableNestedList<SI, I> {
+    return mutableNestedListOf(this.map(generator))
 }
 
 /**
