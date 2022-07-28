@@ -33,7 +33,7 @@ jobs:
           java-version: 11
           distribution: 'temurin'
       - name: Generate Html
-        run: ./gradlew dokkaHtml
+        run: ./gradlew dokkaHtml -PmavenCentralUsername="" -PmavenCentralPassword=""
       - name: Upload Files
         uses: actions/upload-artifact@v3
         with:
