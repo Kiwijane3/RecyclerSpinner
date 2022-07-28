@@ -34,12 +34,6 @@ jobs:
           distribution: 'temurin'
       - name: Generate Html
         run: ./gradlew dokkaHtml -PmavenCentralUsername="" -PmavenCentralPassword=""
-      - name: Upload Files
-        uses: actions/upload-artifact@v3
-        with:
-          path: ./lib/docs/html
-      - name: Setup Pages
-        uses: actions/configure-pages@v1
       - name: Deploy to GitHub Pages
         id: deployment
         uses: peaceiris/actions-gh-pages@v3
