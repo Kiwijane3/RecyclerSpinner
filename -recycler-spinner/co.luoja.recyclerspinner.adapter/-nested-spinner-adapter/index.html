@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>NestedSpinnerAdapter</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+const savedDarkMode = storage ? JSON.parse(storage) : false
+if(savedDarkMode === true){
+    document.getElementsByTagName("html")[0].classList.add("theme-dark")
+}</script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>RecyclerSpinner</span>
+            </a>
+    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="RecyclerSpinner::co.luoja.recyclerspinner.adapter/NestedSpinnerAdapter///PointingToDeclaration//1946847589">
+  <div class="breadcrumbs"><a href="../../../index.html">RecyclerSpinner</a><span class="delimiter">/</span><a href="../index.html">co.luoja.recyclerspinner.adapter</a><span class="delimiter">/</span><a href="index.html">NestedSpinnerAdapter</a></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Nested</span><wbr></wbr><span>Spinner</span><wbr></wbr><span><span>Adapter</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lib:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="index.html">NestedSpinnerAdapter</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">SI</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="index.html">I</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="index.html">SDVH</a><span class="token operator"> : </span><a href="https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView.ViewHolder.html">RecyclerView.ViewHolder</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="index.html">IDVH</a><span class="token operator"> : </span><a href="https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView.ViewHolder.html">RecyclerView.ViewHolder</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="index.html">SVH</a><span class="token operator"> : </span><a href="https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView.ViewHolder.html">RecyclerView.ViewHolder</a><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">initiallySelected<span class="token operator">: </span><a href="index.html">I</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">differ<span class="token operator">: </span><a href="-differ-callback/index.html">NestedSpinnerAdapter.DifferCallback</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">SI</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="index.html">I</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span> : <a href="../-recycler-spinner-adapter/index.html">RecyclerSpinnerAdapter</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">I</a><span class="token punctuation">, </span><span class="token keyword"></span><span data-unresolved-link="co.luoja.recyclerspinner.adapter/NestedSpinnerAdapter.Element///PointingToDeclaration/">NestedSpinnerAdapter.Element</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">SI</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="index.html">I</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView.ViewHolder.html">RecyclerView.ViewHolder</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="index.html">SVH</a><span class="token operator">&gt; </span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">A <a href="../-recycler-spinner-adapter/index.html">RecyclerSpinnerAdapter</a> that presents a two-level hierarchical list of items, where the second level elements can be hidden or displayed.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Types">Types</button><button class="section-tab" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Parameters">Parameters</button><button class="section-tab" data-togglable="See also">See also</button></div>
+    <div class="tabs-section-body">
+      <h2 class="">See also</h2>
+      <div data-togglable="See also">
+        <div class="platform-hinted WithExtraAttributes" data-platform-hinted="data-platform-hinted" data-togglable="See also"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lib:dokkaHtml/release"><div data-togglable="See also"><div class="table" data-togglable="See also"><div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><a href="https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/ListAdapter.html"><span>androidx.</span><wbr></wbr><span>recyclerview.</span><wbr></wbr><span>widget.</span><wbr></wbr><span>List</span><wbr></wbr><span><span>Adapter</span></span></a></div></span></div><div><div class="title"><div data-togglable="See also"></div></div></div></div></div></div></div></div></div>
+      </div>
+      <h2 class="">Parameters</h2>
+      <div data-togglable="Parameters">
+        <div class="platform-hinted WithExtraAttributes" data-platform-hinted="data-platform-hinted" data-togglable="Parameters"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lib:dokkaHtml/release"><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span><span>SI</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">: The Type of the objects used to identify sections. (Section Identifier)</p></div></div></div></div></div><div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span><span>I</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">: The Type of the items that this <a href="../-recycler-spinner-adapter/index.html">RecyclerSpinnerAdapter</a> is used to select.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span><span>SDVH</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">: The Type of the <a href="https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView.ViewHolder.html">ViewHolder</a> used to display headers for each section</p></div></div></div></div></div><div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span><span>IDVH</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">: The Type of <a href="https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView.ViewHolder.html">ViewHolder</a> used to manage the views used to display the items in the dropdown.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span><span>SVH</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">: The Type of <a href="https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView.ViewHolder.html">ViewHolder</a> used to display the selected item in the spinner itself.</p></div></div></div></div></div></div></div></div></div>
+      </div>
+      <h2 class="tabbedcontent">Constructors</h2>
+      <div class="table" data-togglable="Constructors"><a data-name="-1322527053%2FConstructors%2F1946847589" anchor-label="NestedSpinnerAdapter" id="-1322527053%2FConstructors%2F1946847589" data-filterable-set=":lib:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-nested-spinner-adapter.html"><span>Nested</span><wbr></wbr><span>Spinner</span><wbr></wbr><span><span>Adapter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1322527053%2FConstructors%2F1946847589"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lib:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">SI</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="index.html">I</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="-nested-spinner-adapter.html"><span class="token function">NestedSpinnerAdapter</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">differ<span class="token operator">: </span><a href="-differ-callback/index.html">NestedSpinnerAdapter.DifferCallback</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">SI</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="index.html">I</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Creates a new <a href="index.html">NestedSpinnerAdapter</a> using the given <span data-unresolved-link="co.luoja.recyclerspinner.adapter/NestedSpinnerAdapter/&amp;lt;init&amp;gt;/#co.luoja.recyclerspinner.adapter.NestedSpinnerAdapter.DifferCallback[TypeParam(bounds=[kotlin.Any]),TypeParam(bounds=[kotlin.Any])]/PointingToCallableParameters(0)/">differ</span>, which initially has no item selected.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-180468886%2FConstructors%2F1946847589" anchor-label="NestedSpinnerAdapter" id="-180468886%2FConstructors%2F1946847589" data-filterable-set=":lib:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-nested-spinner-adapter.html"><span>Nested</span><wbr></wbr><span>Spinner</span><wbr></wbr><span><span>Adapter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-180468886%2FConstructors%2F1946847589"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lib:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">SI</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="index.html">I</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="-nested-spinner-adapter.html"><span class="token function">NestedSpinnerAdapter</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">initiallySelected<span class="token operator">: </span><a href="index.html">I</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">differ<span class="token operator">: </span><a href="-differ-callback/index.html">NestedSpinnerAdapter.DifferCallback</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">SI</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="index.html">I</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Create a new <a href="index.html">NestedSpinnerAdapter</a> which starts with the given <a href="index.html">Item</a> selected and uses the given <a href="-differ-callback/index.html">DifferCallback</a> to calculate differences when its contents change.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Types</h2>
+      <div class="table" data-togglable="Types"><a data-name="2072465056%2FClasslikes%2F1946847589" anchor-label="DifferCallback" id="2072465056%2FClasslikes%2F1946847589" data-filterable-set=":lib:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-differ-callback/index.html"><span>Differ</span><wbr></wbr><span><span>Callback</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2072465056%2FClasslikes%2F1946847589"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lib:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="-differ-callback/index.html">DifferCallback</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-differ-callback/index.html">SI</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="-differ-callback/index.html">I</a><span class="token operator">&gt;</span> : <a href="https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/DiffUtil.ItemCallback.html">DiffUtil.ItemCallback</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="co.luoja.recyclerspinner.adapter/NestedSpinnerAdapter.Element///PointingToDeclaration/">NestedSpinnerAdapter.Element</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-differ-callback/index.html">SI</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="-differ-callback/index.html">I</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Used by <a href="index.html">NestedSpinnerAdapter</a> to determine whether <a href="-differ-callback/index.html">Items</a> and <a href="-differ-callback/index.html">Section Identifiers</a> have the same identity and contents.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1442346331%2FClasslikes%2F1946847589" anchor-label="ItemViewType" id="-1442346331%2FClasslikes%2F1946847589" data-filterable-set=":lib:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-item-view-type/index.html"><span>Item</span><wbr></wbr><span>View</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1442346331%2FClasslikes%2F1946847589"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lib:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-item-view-type/index.html">ItemViewType</a> : <a href="../-recycler-spinner-adapter/-view-type/index.html">RecyclerSpinnerAdapter.ViewType</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">An interface for objects representing types of views to be displayed to represent items in the selection dropdown.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-807803001%2FClasslikes%2F1946847589" anchor-label="SectionViewType" id="-807803001%2FClasslikes%2F1946847589" data-filterable-set=":lib:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-section-view-type/index.html"><span>Section</span><wbr></wbr><span>View</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-807803001%2FClasslikes%2F1946847589"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lib:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-section-view-type/index.html">SectionViewType</a> : <a href="../-recycler-spinner-adapter/-view-type/index.html">RecyclerSpinnerAdapter.ViewType</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">An interface for objects representing types of views to be displayed as section headers in the selection dropdown.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="-1998524670%2FFunctions%2F1946847589" anchor-label="collapse" id="-1998524670%2FFunctions%2F1946847589" data-filterable-set=":lib:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="collapse.html"><span><span>collapse</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1998524670%2FFunctions%2F1946847589"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lib:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="collapse.html"><span class="token function">collapse</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">sectionIdentifier<span class="token operator">: </span><a href="index.html">SI</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Collapses the section identified by the given <a href="collapse.html">sectionIdentifier</a> if it is currently expanded.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-905739595%2FFunctions%2F1946847589" anchor-label="expand" id="-905739595%2FFunctions%2F1946847589" data-filterable-set=":lib:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="expand.html"><span><span>expand</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-905739595%2FFunctions%2F1946847589"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lib:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="expand.html"><span class="token function">expand</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">sectionIdentifier<span class="token operator">: </span><a href="index.html">SI</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Expands the section identified by the given <a href="expand.html">sectionIdentifier</a> if it is not currently expanded.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1344540844%2FFunctions%2F1946847589" anchor-label="isExpanded" id="1344540844%2FFunctions%2F1946847589" data-filterable-set=":lib:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="is-expanded.html"><span>is</span><wbr></wbr><span><span>Expanded</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1344540844%2FFunctions%2F1946847589"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lib:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-expanded.html"><span class="token function">isExpanded</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">sectionIdentifier<span class="token operator">: </span><a href="index.html">SI</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Returns whether the section identified by the given <a href="is-expanded.html">sectionIdentifier</a> is currently expanded.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-250406261%2FFunctions%2F1946847589" anchor-label="onBindItemViewHolder" id="-250406261%2FFunctions%2F1946847589" data-filterable-set=":lib:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="on-bind-item-view-holder.html"><span>on</span><wbr></wbr><span>Bind</span><wbr></wbr><span>Item</span><wbr></wbr><span>View</span><wbr></wbr><span><span>Holder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-250406261%2FFunctions%2F1946847589"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lib:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-bind-item-view-holder.html"><span class="token function">onBindItemViewHolder</span></a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;viewHolder<span class="token operator">: </span><a href="index.html">IDVH</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;item<span class="token operator">: </span><a href="index.html">I</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;sectionIdentifier<span class="token operator">: </span><a href="index.html">SI</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Called to display the specified <a href="on-bind-item-view-holder.html">item</a>. Should update the contents of holder.itemView to reflect the <a href="on-bind-item-view-holder.html">item</a>.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-2078240289%2FFunctions%2F1946847589" anchor-label="onBindSectionHeaderViewHolder" id="-2078240289%2FFunctions%2F1946847589" data-filterable-set=":lib:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="on-bind-section-header-view-holder.html"><span>on</span><wbr></wbr><span>Bind</span><wbr></wbr><span>Section</span><wbr></wbr><span>Header</span><wbr></wbr><span>View</span><wbr></wbr><span><span>Holder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2078240289%2FFunctions%2F1946847589"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lib:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-bind-section-header-view-holder.html"><span class="token function">onBindSectionHeaderViewHolder</span></a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;viewHolder<span class="token operator">: </span><a href="index.html">SDVH</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;sectionIdentifier<span class="token operator">: </span><a href="index.html">SI</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;expanded<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Called to display the section header for the section identified by the given <a href="on-bind-section-header-view-holder.html">sectionIdentifier</a>. This method should update the contents of viewHolder.itemView to reflect the section.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="961464287%2FFunctions%2F1946847589" anchor-label="onCreateItemViewHolder" id="961464287%2FFunctions%2F1946847589" data-filterable-set=":lib:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="on-create-item-view-holder.html"><span>on</span><wbr></wbr><span>Create</span><wbr></wbr><span>Item</span><wbr></wbr><span>View</span><wbr></wbr><span><span>Holder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="961464287%2FFunctions%2F1946847589"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lib:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-create-item-view-holder.html"><span class="token function">onCreateItemViewHolder</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">parent<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/ViewGroup.html">ViewGroup</a><span class="token punctuation">, </span></span><span class="parameter ">viewType<span class="token operator">: </span><a href="-item-view-type/index.html">NestedSpinnerAdapter.ItemViewType</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">IDVH</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Called when a new <a href="index.html">ViewHolder</a> of the given <a href="on-create-item-view-holder.html">viewType</a> is needed to represent an item in the dropdown.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-908761958%2FFunctions%2F1946847589" anchor-label="onCreateSectionHeaderViewHolder" id="-908761958%2FFunctions%2F1946847589" data-filterable-set=":lib:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="on-create-section-header-view-holder.html"><span>on</span><wbr></wbr><span>Create</span><wbr></wbr><span>Section</span><wbr></wbr><span>Header</span><wbr></wbr><span>View</span><wbr></wbr><span><span>Holder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-908761958%2FFunctions%2F1946847589"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lib:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-create-section-header-view-holder.html"><span class="token function">onCreateSectionHeaderViewHolder</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">parent<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/ViewGroup.html">ViewGroup</a><span class="token punctuation">, </span></span><span class="parameter ">viewType<span class="token operator">: </span><a href="-section-view-type/index.html">NestedSpinnerAdapter.SectionViewType</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">SDVH</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Called when a new <a href="index.html">ViewHolder</a> of the given <a href="on-create-section-header-view-holder.html">viewType</a> is needed to act as a section header.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="851437444%2FFunctions%2F1946847589" anchor-label="setIsExpanded" id="851437444%2FFunctions%2F1946847589" data-filterable-set=":lib:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-is-expanded.html"><span>set</span><wbr></wbr><span>Is</span><wbr></wbr><span><span>Expanded</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="851437444%2FFunctions%2F1946847589"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lib:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-is-expanded.html"><span class="token function">setIsExpanded</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">sectionIdentifier<span class="token operator">: </span><a href="index.html">SI</a><span class="token punctuation">, </span></span><span class="parameter ">expanded<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1893685054%2FFunctions%2F1946847589" anchor-label="submitNestedList" id="1893685054%2FFunctions%2F1946847589" data-filterable-set=":lib:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="submit-nested-list.html"><span>submit</span><wbr></wbr><span>Nested</span><wbr></wbr><span><span>List</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1893685054%2FFunctions%2F1946847589"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lib:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="submit-nested-list.html"><span class="token function">submitNestedList</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">list<span class="token operator">: </span><a href="../../co.luoja.recyclerspinner/-nested-list/index.html">NestedList</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">SI</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="index.html">I</a><span class="token operator">&gt;</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Submits a nested list to be displayed in the spinner.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1645619906%2FFunctions%2F1946847589" anchor-label="toggleExpanded" id="1645619906%2FFunctions%2F1946847589" data-filterable-set=":lib:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="toggle-expanded.html"><span>toggle</span><wbr></wbr><span><span>Expanded</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1645619906%2FFunctions%2F1946847589"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lib:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="toggle-expanded.html"><span class="token function">toggleExpanded</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">sectionIdentifier<span class="token operator">: </span><a href="index.html">SI</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Toggles whether the section identified by the given <a href="toggle-expanded.html">sectionIdentifier</a> is expanded.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-109879937%2FFunctions%2F1946847589" anchor-label="viewTypeForItem" id="-109879937%2FFunctions%2F1946847589" data-filterable-set=":lib:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="view-type-for-item.html"><span>view</span><wbr></wbr><span>Type</span><wbr></wbr><span>For</span><wbr></wbr><span><span>Item</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-109879937%2FFunctions%2F1946847589"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lib:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="view-type-for-item.html"><span class="token function">viewTypeForItem</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">item<span class="token operator">: </span><a href="index.html">I</a><span class="token punctuation">, </span></span><span class="parameter ">sectionIdentifier<span class="token operator">: </span><a href="index.html">SI</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-item-view-type/index.html">NestedSpinnerAdapter.ItemViewType</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Determines the <a href="-item-view-type/index.html">type</a> of the view that should be used to the display the given <a href="view-type-for-item.html">item</a>.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1190752125%2FFunctions%2F1946847589" anchor-label="viewTypeForSectionHeader" id="1190752125%2FFunctions%2F1946847589" data-filterable-set=":lib:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":lib:dokkaHtml/release" data-filterable-set=":lib:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="view-type-for-section-header.html"><span>view</span><wbr></wbr><span>Type</span><wbr></wbr><span>For</span><wbr></wbr><span>Section</span><wbr></wbr><span><span>Header</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1190752125%2FFunctions%2F1946847589"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lib:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="view-type-for-section-header.html"><span class="token function">viewTypeForSectionHeader</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">sectionIdentifier<span class="token operator">: </span><a href="index.html">SI</a><span class="token punctuation">, </span></span><span class="parameter ">expanded<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-section-view-type/index.html">NestedSpinnerAdapter.SectionViewType</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Determines the <a href="-section-view-type/index.html">type</a> of the view that should be used to display the header for the section with the given <a href="view-type-for-section-header.html">sectionIdentifier</a>.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
