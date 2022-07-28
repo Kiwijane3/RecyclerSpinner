@@ -36,4 +36,4 @@ jobs:
         id: deployment
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: libs/docs/html
+          folder: lib/docs/html
